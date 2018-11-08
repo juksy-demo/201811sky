@@ -1,0 +1,32 @@
+{
+  "name": "201809playlife",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.6"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "browser-sync": "^2.23.6",
+    "clipboard": "^1.5.16",
+    "cryptiles": "^4.1.2",
+    "gulp-pug": "^4.0.1",
+    "handlebars": "^4.0.6",
+    "hoek": "^4.2.1",
+    "jquery": "^3.1.1",
+    "jquery-touchswipe": "^1.6.15",
+    "jquery.dotdotdot": "^1.7.4",
+    "lightslider": "^1.1.6",
+    "lodash": "^4.17.4",
+    "photoswipe": "^4.1.1",
+    "wowjs": "^1.1.3"
+  }
+}

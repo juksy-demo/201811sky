@@ -1,0 +1,35 @@
+doctype html
+html(lang='zh-TW')
+  head
+    include ./base/head.jade
+  body
+    #fb-root
+    h1.hide 女漢子 Girl Crush
+    include ./nav/n_02.jade
+    include ./header/h_03.jade
+    include ./list/l_09.jade
+    include ./video/v_02.jade
+    include ./list/l_08.jade
+    include ./video/v_01.jade
+    include ./list/l_04.jade
+    include ./gallery/g_01.jade
+    include ./footer/f_02.jade
+    include ./btnfixed/b_01.jade
+
+    // JS start
+
+    // JS cdn
+    include ./base/cdnjs.jade
+
+    // JS DEV FILE
+    include ./base/devjs.jade
+
+    // JS MIN FILE
+    //- include ./base/minjs.jade
+
+    // JS third party
+    script(type='text/javascript')
+      include ./js/foot.js
+    // JS third party end
+
+    // JS end

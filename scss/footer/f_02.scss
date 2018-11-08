@@ -1,0 +1,137 @@
+.footer_02 {
+  display: block;
+  font-family: $font_module;
+  background-color: #000;
+  color: $white;
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px;
+  .footerWrap {
+    padding: 50px $m_gap;
+    @include screen(pcSmall) {
+      padding: 30px $m_gap 50px $m_gap;
+    }
+    .socialWrap {
+      overflow: hidden;
+      @include screen(tb) {
+        width: 415px;
+        margin: 0 auto;
+      }
+      @include screen(pcSmall) {
+        width: 100%;
+        overflow: hidden;
+      }
+      a.logo {
+        display: block;
+        width: 150px;
+        display: none;
+        @include screen(pcSmall) {
+          display: block;
+          float: left;
+        }
+        svg {
+          .st0 {
+            fill: #FFFFFF;
+          }
+        }
+      }
+      .followWrap {
+        @include screen(pcSmall) {
+          float: right;
+        }
+        .title {
+          font-size: 30px;
+          letter-spacing: 0px;
+          @include screen(tb) {
+            float: left;
+            line-height: 50px;
+          }
+          @include screen(pcSmall) {
+            line-height: 40px;
+          }
+        }
+        ul.social {
+          overflow: hidden;
+          width: 200px;
+          margin: 20px auto;
+          @include screen(tb) {
+            float: left;
+            margin-left: 20px;
+            margin-top: 0;
+          }
+          @include screen(pcSmall) {
+            width: 130px;
+          }
+          li {
+            @include list_style_none;
+            float: left;
+            margin-right: 5px;
+            &:last-child {
+              margin-right: 0;
+            }
+            &.juksy {
+              @include screen(pcSmall) {
+                display: none;
+              }
+            }
+            a {
+              display: block;
+              width: 45px;
+              height: 45px;
+              overflow: hidden;
+              position: relative;
+              @include screen(pcSmall) {
+                width: 40px;
+                height: 40px;
+              }
+              svg {
+                position: absolute;
+                left: 0;
+                .st0 {
+                  fill: $white;
+                  @include transition;
+                }
+              }
+              .borderAnimate {
+                float: left;
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid $white;
+                border-radius: 50%;
+                box-sizing: border-box;
+                @include transition;
+              }
+              &:hover {
+                svg {
+                  .st0 {
+                    fill: $black;
+                  }
+                }
+                .borderAnimate {
+                  border: 2px solid transparent;
+                  background-color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      font-weight: bold;
+      padding-top: 30px;
+      clear: both;
+      @include screen(pcSmall) {
+        padding-top: 60px;
+      }
+      .line1 {
+        @include screen(tb) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

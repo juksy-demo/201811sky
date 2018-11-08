@@ -1,0 +1,257 @@
+.list_09 {
+  background-color: $black;
+  font-family: $font_module;
+  padding-top: 30px;
+  .layoutWrap {
+    .title {
+      font-size: 28px;
+      line-height: 1.5em;
+      letter-spacing: 2px;
+      padding: 50px $m_gap 0 $m_gap;
+      color: $white;
+      @include screen(tb) {
+        padding: 50px $tb_gap 0 $tb_gap;
+      }
+      @include screen(pcSmall) {
+        padding: 50px 0 0 0;
+        width: $pc_max_width;
+        margin: 0 auto;
+      }
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $white;
+      }
+    }
+    .article {
+      margin-top: 30px;
+      position: relative;
+      @include screen(pcSmall) {
+        height: 85vh;
+        min-height: 600px;
+      }
+      ul.pic {
+        position: relative;
+        height: 60vh;
+        overflow: hidden;
+        @include screen(pcSmall) {
+          width: 75vh;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        li {
+          @include list_style_none;
+          position: absolute;
+          opacity: 0;
+          width: 100%;
+          z-index: -1;
+          &.now {
+            opacity: 1;
+            z-index: 0;
+            @include animation(custom_R2Lflow 1s ease);
+          }
+          a.img {
+            @include a_img;
+            width: 100%;
+            background-size: cover;
+            height: 60vh;
+            @include screen(pcSmall) {
+              height: 75vh;
+            }
+          }
+        }
+      }
+      .txt {
+        padding: 0 $m_gap;
+        margin-top: -62px;
+        @include screen(mLarge) {
+          margin-top: -63px;
+        }
+        @include screen(tb) {
+          padding: 0 $tb_gap;
+        }
+        @include screen(pcSmall) {
+          width: 540px;
+          padding: 70px 180px 0 100px;
+          margin: -63px auto 0 auto;
+          overflow: hidden;
+        }
+        ul.dateWrap {
+          background-color: $white;
+          padding: 15px;
+          position: relative;
+          width: 250px;
+          height: 32px;
+          line-height: 32px;
+          letter-spacing: 2px;
+          @include screen(tb) {
+            width: 340px;
+          }
+          @include screen(pcSmall) {
+            width: 510px;
+          }
+          li {
+            @include list_style_none;
+            font-weight: bold;
+            overflow: hidden;
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            &.now {
+              opacity: 1;
+              z-index: 0;
+            }
+            .date {
+              font-size: 40px;
+              float: left;
+            }
+            .month {
+              font-size: 12px;
+              float: left;
+              line-height: 1.4em;
+              border-right: 3px solid #000;
+              padding: 0 5px;
+              margin-right: 10px;
+            }
+            .author {
+              float: left;
+              text-transform: uppercase;
+              color: #000;
+              @media screen and (max-width: 767px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        ul.main {
+          background-color: $white;
+          padding: 20px 15px 50px 15px;
+          height: 96px;
+          position: relative;
+          @include screen(pcSmall) {
+            width: 400px;
+            padding: 20px 30px 50px 30px;
+            height: 340px;
+            float: right;
+          }
+          li {
+            @include list_style_none;
+            width: calc(100% - 30px);
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+            @include screen(pcSmall) {
+              width: calc(100% - 60px);
+            }
+            &.now {
+              opacity: 1;
+              z-index: 0;
+              color: $black;
+              @include animation(custom_fadeinup 1s cubic-bezier(0.165, 0.84, 0.44, 1));
+            }
+            .atitleWrap {
+              a.atitle {
+                display: block;
+                font-size: 17px;
+                max-height: $line-height*3;
+                overflow: hidden;
+                @include screen(tb) {
+                  font-size: 24px;
+                  max-height: $line-height*2;
+                }
+                @include screen(pcSmall) {
+                  font-size: 20px;
+                }
+                h3 {
+                  font-weight: bold;
+                }
+                &:hover {
+	                opacity: 0.7;
+                }
+              }
+              &:after {
+                content: '';
+                display: block;
+                width: 80px;
+                height: 7px;
+                background-color: #fff;
+                margin-top: 5px;
+              }
+            }
+            .detail {
+              display: none;
+              @include screen(pcSmall) {
+                display: block;
+                font-size: 16px;
+                line-height: 1.8em;
+                height: $line-height*7;
+                overflow: hidden;
+                margin-top: 30px;
+              }
+            }
+            a.button {
+              display: none;
+              @include screen(pcSmall) {
+                display: block;
+                width: 200px;
+                background-color: #000;
+                color: $white;
+                text-align: center;
+                margin: 20px auto;
+                &:hover {
+	                opacity: 0.7;
+                }
+              }
+            }
+          }
+        }
+      }
+      .navWrap {
+      	@include screen(pcSmall) {
+      		width: 820px;
+      		margin: 0 auto;
+      	}
+        .nav {
+          background-color: $pantone;
+          font-size: 24px;
+          font-weight: bold;
+          margin: -30px auto 0 auto;
+          overflow: hidden;
+          position: relative;
+          width: calc(60px + 60px + 60px);
+          @include screen(tb) {
+            line-height: 30px;
+          }
+          @include screen(pcSmall) {
+            margin: -20vh 0 0 0;
+          }
+          .btn {
+            width: 40px;
+            padding: 15px 10px;
+            height: 100%;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            font-weight: normal;
+            color:#fff;
+            &.right {
+              float: right;
+            }
+            &.end {
+              opacity: 0.3;
+              cursor: default;
+            }
+          }
+          .number {
+            float: left;
+            color:#fff;
+            text-align: center;
+            line-height: 58px;
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}

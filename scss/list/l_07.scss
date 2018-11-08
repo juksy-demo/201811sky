@@ -1,0 +1,104 @@
+.list_07 {
+  background-color: $black;
+  color: $white;
+  font-family: $font_module;
+  padding-top: 30px;
+  .layoutWrap {
+    .title {
+      font-size: 28px;
+      line-height: 1.5em;
+      letter-spacing: 2px;
+      padding: 50px $m_gap 0 $m_gap;
+      color: $white;
+      @include screen(tb) {
+      	padding: 50px $tb_gap 0 $tb_gap;
+      }
+      @include screen(pcSmall) {
+      	padding: 50px 0 0 0;
+      	width: $pc_max_width;
+      	margin: 0 auto;
+      }
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $white;
+      }
+    }
+    ul.article {
+      margin-top: 30px;
+      @include screen(pcSmall) {
+      	width: $pc_max_width;
+      	margin: 30px auto 0 auto;
+        padding-bottom: 30px;
+      }
+      li {
+        @include list_style_none;
+        position: relative;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        overflow: hidden;
+        @include screen(pcSmall) {
+          margin-bottom: 30px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        a.img {
+          @include a_img;
+          width: 100%;
+          background-size: 100% auto;
+          @include transition;
+          &:hover {
+          	background-size: 103% auto;
+          }
+          .linkWrap {
+            height: calc(320px*0.33);
+            @include screen(pcSmall) {
+              background-color: rgba(0,0,0,0.3);
+            }
+          	@include transition;
+            @include screen(mLarge) {
+              height: calc(414px*0.33);
+            }
+            @include screen(tb) {
+              height: calc(768px*0.33);
+            }
+            @include screen(pcSmall) {
+              height: calc(970px*0.33);
+            }
+            &:hover {
+            	background-color: rgba(0,0,0,0);
+            }
+          }
+        }
+        .txtWrap {
+        	width: calc(100% - 20px*2);
+          padding: 10px $m_gap 30px $m_gap;
+          @include screen(tb) {
+          	width: calc(100% - 40px*2);
+          	padding: 10px $tb_gap 30px $tb_gap;
+          }
+          @include screen(pcSmall) {
+          	margin: 0 auto;
+          	position: absolute;
+          	bottom: 0;
+          }
+          a.txt {
+            display: block;
+            max-height: $line-height*3;
+            overflow: hidden;
+            text-align: center;
+            color: $white;            
+            @include screen(pcSmall) {
+            	padding: 0 160px;
+              color: $white;
+            }
+            h3 {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

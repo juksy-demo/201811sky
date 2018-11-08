@@ -1,0 +1,201 @@
+.list_08 {
+  background-color: $black;
+  font-family: $font_module;
+  padding-top: 30px;
+  .layoutWrap {
+    .title {
+      font-size: 28px;
+      line-height: 1.5em;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 50px $m_gap 0 $m_gap;
+      color: $white;
+      @include screen(tb) {
+        padding: 50px $tb_gap 0 $tb_gap;
+      }
+      @include screen(pcSmall) {
+        padding: 50px 0 0 0;
+        width: $pc_max_width;
+        margin: 0 auto;
+      }
+      &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid $white;
+      }
+    }
+    ul.article {
+      margin-top: 30px;
+      padding: 0 $m_gap;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      overflow: hidden;
+      @include screen(tb) {
+        padding: 0 $tb_gap;
+      }
+      @include screen(pcSmall) {
+        padding: 0;
+        width: $pc_max_width;
+        margin: 30px auto 0 auto;
+      }
+      li {
+        @include list_style_none;
+        position: relative;
+        background-color: $white;
+        margin-bottom: 20px;
+        overflow: hidden;
+        @include screen(pcSmall) {
+          float: left;
+          width: 316px;
+          margin-right: 11px;
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+        }
+        a.img {
+          @include a_img;
+          // float: left;
+          // width: 150px;
+          @include screen(tb) {
+            width: 285px;
+          }
+          @include screen(pcSmall) {
+            float: none;
+            width: 100%;
+          }
+          .linkWrap {
+            height: 104px;
+            background-blend-mode: difference;
+            background-size: 200%, cover;
+            background-repeat: no-repeat, no-repeat;
+            background-position: 0 0, 0 0;
+            opacity: 0;
+            display: -webkit-flex;
+            display: flex;
+            @include transition;
+            @include screen(tb) {
+              height: 150px;
+            }
+            @include screen(pcSmall) {
+              height: calc(316px/1.9);
+            }
+            .txt {
+              color: $white;
+              text-align: center;
+              -webkit-flex: 1 auto;
+              flex: 1 auto;
+              -webkit-align-self: center;
+              align-self: center;
+              position: relative;
+              &:before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: $white;
+                position: absolute;
+                left: 50%;
+                bottom: 12px;
+                @include transform(translate(-50%, 0));
+                @include transition;
+                @include screen(tb) {
+                  bottom: 20px;
+                }
+                @include screen(pcSmall) {
+                  bottom: 15px;
+                }
+              }
+            }
+          }
+        }
+        .txtWrap {
+            padding: 10px 20px;
+            width: calc(100% - 190px);
+            float: right;
+            @include screen(tb) {
+              padding: 30px 20px;
+              width: calc(100% - 325px);
+            }
+            @include screen(pcSmall) {
+              padding: 10px 20px;
+              width: auto;
+              float: none;
+            }
+            .txt {
+              display: block;
+              max-height: $line-height*3;
+              overflow: hidden;
+              text-align: left;
+              letter-spacing: normal;
+              @include screen(tb) {
+                max-height: $line-height*2;
+              }
+              h3 {
+                font-weight: bold;
+              }
+            }
+        } 
+        .date {            
+            text-align: center;
+            display: none;
+            font-size: 14px;
+            padding: 20px;
+            @include screen(tb) {
+              font-size: 18px;
+            }
+            @include screen(pcSmall) {
+              font-size: 14px;
+              display: block;
+            }
+        }
+      }
+      li:hover {
+        a.img {
+          .linkWrap {
+            opacity: 1;
+            @include animation(background_diff 2s linear infinite);
+            .txt {
+              &:before {
+                width: 100px;
+                @include screen(tb) {
+                  width: 120px;
+                }
+                @include screen(pcSmall) {
+                  width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+      li:nth-child(3n+1) {
+        a.img {
+          float: none;
+          width: 100%;
+          .linkWrap {
+            height: calc(280px/1.9);
+            @include screen(mLarge) {
+              height: calc(374px/1.9);
+            }
+            @include screen(tb) {
+              height: calc(688px/1.9);
+            }
+            @include screen(pcSmall) {
+              height: calc(316px/1.9);
+            }
+          }
+        }
+        .txtWrap {
+          padding: 10px 20px;
+          width: auto;
+          float: none;
+          text-align: center;
+          letter-spacing: 2px;
+        }
+        .date {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.header_04 {
+  .headerWrap {
+    position: relative;
+    background-color: $white;
+    .visualBg {
+      .picture {
+        @include screen(pcSmall) {
+          display: block;
+          height: 90vh;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50%;
+        }
+        @include screen(pcLarge) {
+          background-attachment: fixed;
+        }
+        img {
+          width: 100%;
+          display: block;
+          @include screen(pcSmall) {
+            display: none;
+          }
+        }
+      }
+    }
+    .iconWrap {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      @include screen(pcSmall) {
+        display: none;
+      }
+      .scrollIcon {
+        width: 20px;
+        height: 35px;
+        margin: 0 auto;
+        border: 2px solid $white;
+        border-radius: 12px 12px 8px 8px;
+        .line {
+          width: 2px;
+          height: 10px;
+          margin: 5px auto 0 auto;
+          background-color: $white;
+          @include animation(scroll_line 1s ease infinite);
+        }
+      }
+      .arrow {
+        width: 8.2px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.8em;
+        @include animation(scroll_arrow2 1s ease infinite);
+        svg {
+          .st0 {
+            fill: none;
+            stroke: $white;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          }
+        }
+      }
+    }
+    .source {
+      color: #fff;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: normal;
+      text-align: right;
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+    }
+  }
+}

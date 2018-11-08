@@ -1,0 +1,1117 @@
+body {
+  //若使用 header_02 將背景變成黑色 影片較不會破圖
+  background-color: $black;
+}
+
+@-webkit-keyframes fall {
+  0% {
+      opacity: 0.9;
+      top: 0
+  }
+  100% {
+      opacity: 0.2;
+      top: 100%
+  }
+}
+
+@keyframes fall {
+  0% {
+      opacity: 0.9;
+      top: 0
+  }
+  100% {
+      opacity: 0.2;
+      top: 100%
+  }
+}
+
+@-webkit-keyframes blow-soft-left {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: -50%
+  }
+}
+
+@keyframes blow-soft-left {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: -50%
+  }
+}
+
+@-webkit-keyframes blow-medium-left {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: -100%
+  }
+}
+
+@keyframes blow-medium-left {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: -100%
+  }
+}
+
+@-webkit-keyframes blow-soft-right {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: 50%
+  }
+}
+
+@keyframes blow-soft-right {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: 50%
+  }
+}
+
+@-webkit-keyframes blow-medium-right {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: 100%
+  }
+}
+
+@keyframes blow-medium-right {
+  0% {
+      margin-left: 0
+  }
+  100% {
+      margin-left: 100%
+  }
+}
+
+@-webkit-keyframes sway-0 {
+  0% {
+      -webkit-transform: rotate(-5deg)
+  }
+  40% {
+      -webkit-transform: rotate(28deg)
+  }
+  100% {
+      -webkit-transform: rotate(3deg)
+  }
+}
+
+@keyframes sway-0 {
+  0% {
+      -ms-transform: rotate(-5deg);
+      transform: rotate(-5deg)
+  }
+  40% {
+      -ms-transform: rotate(28deg);
+      transform: rotate(28deg)
+  }
+  100% {
+      -ms-transform: rotate(3deg);
+      transform: rotate(3deg)
+  }
+}
+
+@-webkit-keyframes sway-1 {
+  0% {
+      -webkit-transform: rotate(10deg)
+  }
+  40% {
+      -webkit-transform: rotate(43deg)
+  }
+  100% {
+      -webkit-transform: rotate(15deg)
+  }
+}
+
+@keyframes sway-1 {
+  0% {
+      -ms-transform: rotate(10deg);
+      transform: rotate(10deg)
+  }
+  40% {
+      -ms-transform: rotate(43deg);
+      transform: rotate(43deg)
+  }
+  100% {
+      -ms-transform: rotate(15deg);
+      transform: rotate(15deg)
+  }
+}
+
+@-webkit-keyframes sway-2 {
+  0% {
+      -webkit-transform: rotate(15deg)
+  }
+  40% {
+      -webkit-transform: rotate(56deg)
+  }
+  100% {
+      -webkit-transform: rotate(22deg)
+  }
+}
+
+@keyframes sway-2 {
+  0% {
+      -ms-transform: rotate(15deg);
+      transform: rotate(15deg)
+  }
+  40% {
+      -ms-transform: rotate(56deg);
+      transform: rotate(56deg)
+  }
+  100% {
+      -ms-transform: rotate(22deg);
+      transform: rotate(22deg)
+  }
+}
+
+@-webkit-keyframes sway-3 {
+  0% {
+      -webkit-transform: rotate(25deg)
+  }
+  40% {
+      -webkit-transform: rotate(74deg)
+  }
+  100% {
+      -webkit-transform: rotate(37deg)
+  }
+}
+
+@keyframes sway-3 {
+  0% {
+      -ms-transform: rotate(25deg);
+      transform: rotate(25deg)
+  }
+  40% {
+      -ms-transform: rotate(74deg);
+      transform: rotate(74deg)
+  }
+  100% {
+      -ms-transform: rotate(37deg);
+      transform: rotate(37deg)
+  }
+}
+
+@-webkit-keyframes sway-4 {
+  0% {
+      -webkit-transform: rotate(40deg)
+  }
+  40% {
+      -webkit-transform: rotate(68deg)
+  }
+  100% {
+      -webkit-transform: rotate(25deg)
+  }
+}
+
+@keyframes sway-4 {
+  0% {
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg)
+  }
+  40% {
+      -ms-transform: rotate(68deg);
+      transform: rotate(68deg)
+  }
+  100% {
+      -ms-transform: rotate(25deg);
+      transform: rotate(25deg)
+  }
+}
+
+@-webkit-keyframes sway-5 {
+  0% {
+      -webkit-transform: rotate(50deg)
+  }
+  40% {
+      -webkit-transform: rotate(78deg)
+  }
+  100% {
+      -webkit-transform: rotate(40deg)
+  }
+}
+
+@keyframes sway-5 {
+  0% {
+      -ms-transform: rotate(50deg);
+      transform: rotate(50deg)
+  }
+  40% {
+      -ms-transform: rotate(78deg);
+      transform: rotate(78deg)
+  }
+  100% {
+      -ms-transform: rotate(40deg);
+      transform: rotate(40deg)
+  }
+}
+
+@-webkit-keyframes sway-6 {
+  0% {
+      -webkit-transform: rotate(65deg)
+  }
+  40% {
+      -webkit-transform: rotate(92deg)
+  }
+  100% {
+      -webkit-transform: rotate(58deg)
+  }
+}
+
+@keyframes sway-6 {
+  0% {
+      -ms-transform: rotate(65deg);
+      transform: rotate(65deg)
+  }
+  40% {
+      -ms-transform: rotate(92deg);
+      transform: rotate(92deg)
+  }
+  100% {
+      -ms-transform: rotate(58deg);
+      transform: rotate(58deg)
+  }
+}
+
+@-webkit-keyframes sway-7 {
+  0% {
+      -webkit-transform: rotate(72deg)
+  }
+  40% {
+      -webkit-transform: rotate(118deg)
+  }
+  100% {
+      -webkit-transform: rotate(68deg)
+  }
+}
+
+@keyframes sway-7 {
+  0% {
+      -ms-transform: rotate(72deg);
+      transform: rotate(72deg)
+  }
+  40% {
+      -ms-transform: rotate(118deg);
+      transform: rotate(118deg)
+  }
+  100% {
+      -ms-transform: rotate(68deg);
+      transform: rotate(68deg)
+  }
+}
+
+@-webkit-keyframes sway-8 {
+  0% {
+      -webkit-transform: rotate(94deg)
+  }
+  40% {
+      -webkit-transform: rotate(136deg)
+  }
+  100% {
+      -webkit-transform: rotate(82deg)
+  }
+}
+
+@keyframes sway-8 {
+  0% {
+      -ms-transform: rotate(94deg);
+      transform: rotate(94deg)
+  }
+  40% {
+      -ms-transform: rotate(136deg);
+      transform: rotate(136deg)
+  }
+  100% {
+      -ms-transform: rotate(82deg);
+      transform: rotate(82deg)
+  }
+}
+
+@keyframes sway-9 {
+  0% {
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg)
+  }
+  100% {
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg)
+  }
+}
+
+.sakura {
+  background: url('../img/light.png') center center no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  position: absolute
+}
+
+
+.nav_01 {
+  .navWrap {
+    @include screen(pcSmall) {
+      //桌機-導覽列顏色
+      //background-color: rgba(0, 0, 0, 0.9);
+    }
+    .logoWrap {
+      //手機-導覽列顏色
+      //background-color: rgba(0, 0, 0, 0.9);
+      @include screen(pcSmall) {
+        // 手機-導覽列顏色
+        //background-color: transparent;
+      }
+    }
+    .menuWrap {
+      ul.menu {
+        li {
+          @include screen(pcSmall) {
+            ul {
+              //子選單背景顏色
+              //background-color: rgba(188, 0, 45, 1);
+            }
+            &:hover ul {
+              li {
+                //子選單背景顏色
+                //background-color: rgba(188, 0, 45, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav_02_line {
+  @include screen(pcSmall) {
+    ul.list {
+      // 調整各個 tooltip 寬度
+      li {
+        &:nth-child(1) {
+          a.tooltip {
+            .tooltiptext {
+              width: 70px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          a.tooltip {
+            .tooltiptext {
+              width: 110px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          a.tooltip {
+            .tooltiptext {
+              width: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_01 {
+  .headerWrap {
+    .visualBg {
+      //手機－主視覺圖片
+      //background-image: url('../img/visual_m.jpg');
+      //主視覺圖片垂直靠上或垂直置中對齊
+      //background-position: center top;
+      @include screen(tb) {
+        //平板－主視覺圖片
+        //background-image: url('../img/visual_tb.jpg');
+      }
+      @include screen(pcSmall) {
+        //桌機－主視覺圖片
+        //background-image: url('../img/visual_pc.jpg');
+      }
+    }
+    .detail {
+      .detailWrap {
+        .txtBg {
+          //描述背景色
+          //background-color: rgba(0, 0, 0, 1);
+        }
+        .txtInner {
+          a.link {
+            //馬上閱讀背景色
+            //background-color: rgba(188, 0, 45, 1);
+            &:hover {
+              //馬上閱讀背景色－滑過
+              //background-color: rgba(188, 0, 45, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_02 {
+  .headerWrap {
+    // 調整敘述高度
+    // height: calc(568*0.9px + 305px - 31px); // visual + detail - triangle(30)
+    // @include screen(mMedium) {
+    //   height: calc(667*0.9px + 278px - 31px);
+    // }
+    // @include screen(mLarge) {
+    //   height: calc(736*0.9px + 277px - 31px);
+    // }
+    // @include screen(tb) {
+    //   height: calc(1024*0.9px + 295px - 31px);
+    // }
+    // @include screen(pcSmall) {
+    //   height: calc(768*0.9px + 180px - 31px);
+    // }
+    // @include screen(pcLarge) {
+    //   height: calc(900*0.9px + 180px - 31px);
+    // }
+    .visualBg {
+      //手機主視覺
+      //background-image: url('../img/visual_m.jpg');
+      //手機主視覺圖片位置置中
+      //background-position: center;
+      @include screen(tb) {
+        //平板主視覺
+        //background-image: url('../img/visual_tb.jpg');
+        //平板主視覺圖片位置置中
+        //background-position: center;
+      }
+    }
+    .parallax {
+      .videoWrapper {
+        .videoCover {
+          //影片斜線遮罩圖
+          display: none;
+        }
+      }
+    }
+    .parallaxContent {
+      @include screen(pcSmall) {
+        .title {
+          //桌機標題圖
+          //background-image: url('../img/htitle.png');
+          //桌機標題圖位置
+          background-position: center 60%;
+        }
+      }
+    }
+    .detail {
+      .detailWrap {
+        .txtBg {
+          //描述背景色
+          background-color: rgba(0, 0, 0, 1);
+          // 調整敘述高度
+          // height: 305px; //equal to .detailWrap height
+          // @include screen(mMedium) {
+          //   height: 278px;
+          // }
+          // @include screen(mLarge) {
+          //   height: 277px;
+          // }
+          // @include screen(tb) {
+          //   height: 295px;
+          // }
+          // @include screen(pcSmall) {
+          //   height: 180px;
+          // }
+        }
+        .txtInner {
+          a.link {
+            //馬上閱讀背景色
+            background-color: rgba(188, 0, 45, 1);
+            //馬上閱讀背景色－滑過
+            &:hover {
+              background-color: rgba(188, 0, 45, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_03 {
+  .headerWrap {
+    .visualBg {
+      .bannerTitle {
+        // 蓋住不動的標題
+        // display: none;
+      }
+      .bannerCover {
+        // 蓋住不動的圖紋
+        // display: none;
+      }
+    }
+    .detail {
+      .detailWrap {
+        .txtBg {
+          //描述背景色
+          background-color: #000;
+        }
+        .txtInner {
+          a.link {
+            // 文字顏色
+            // color: $black;
+            .linkWrap {
+              @include screen(pcSmall) {
+                // 連結框線顏色
+                // border: 1px solid $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_01 {
+  //背景色
+  //background-color: $white;
+  .layoutWrap {
+    .mainArticle {
+      a.img {
+        .linkWrap {
+          //圖片滑過色塊
+          //background-color: rgba(188, 0, 45, 0.9);
+        }
+      }
+      .detailWrap {
+        a.button {
+          &:hover {
+            //了解更多按鈕－滑過背景色
+            //background-color: #bc002d;
+            //了解更多按鈕－滑過文字顏色
+            //color: $white;
+            .arrow {
+              //了解更多按鈕－滑過背景色
+              //border-color: transparent transparent transparent #bc002d;
+            }
+          }
+        }
+      }
+    }
+    .subArticle {
+      a.img {
+        .linkWrap {
+          //圖片滑過色塊
+          //background-color: rgba(188, 0, 45, 0.9);
+        }
+      }
+    }
+    .exArticle {
+      ul.exArticleWrap {
+        li {
+          a.img {
+            .linkWrap {
+              //圖片滑過色塊
+              //background-color: rgba(188, 0, 45, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_02 {
+  //背景色
+  //background-color: $white;
+  .layoutWrap {
+    .title {
+      //上標題文字顏色
+      //color: $black;
+      &:after {
+        //上標題底線顏色
+        //background-color: $black;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      //color: $black;
+    }
+    .subTitleWrap {
+      p.subTitle {
+        //描述顏色
+        //color: rgba(102, 102, 102, 1);
+      }
+    }
+    ul.articleWrap {
+      li {
+        //區塊上方線條顏色
+        //border-top: 1px solid #005887;
+        .article {
+          //文章區塊背景色
+          //background-color: #005887;
+          a.img {
+            .linkWrap {
+              //圖片滑過色塊
+              //background-color: rgba(122, 161, 194, 0.8);
+            }
+            &:after {
+              //文章區塊背景色
+              //border-color: #005887 transparent transparent transparent;
+            }
+          }
+          a.txt {
+            h3 {
+              //文字顏色
+              //color: #fff;
+              @include screen(pcLarge) {
+                //文章標題滑過背景色
+                //@include linear-gradient(to right, transparent 50%, $black 50%);
+              }
+            }
+          }
+        }
+        &.big {
+          .article {
+            a.img {
+              .linkWrap {
+                //圖片滑過色塊
+                //background-color: rgba(122, 161, 194, 0.8);
+              }
+            }
+          }
+          &:after {
+            //文章區塊背景色
+            //border-color: transparent transparent #005887 transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_03 {
+  //背景色
+  //background-color: $white;
+  .layoutWrap {
+    .title {
+      //上標題文字顏色
+      //color: $black;
+      &:after {
+        //上標題底線顏色
+        //background-color: $black;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      //color: $black;
+    }
+    .subTitleWrap {
+      p.subTitle {
+        //描述顏色
+        //color: rgba(102, 102, 102, 1);
+      }
+    }
+    .articleWrap {
+      ul.article {
+        li {
+          .txtWrap {
+            a.txt {
+              h3 {
+                @include screen(pcLarge) {
+                  //文章標題滑過背景色
+                  //@include linear-gradient(to right, transparent 50%, $black 50%);
+                }
+              }
+            }
+            a.more {
+              span {
+                @include screen(pcLarge) {
+                  //了解更多滑過背景色
+                  //@include linear-gradient(to right, transparent 50%, $black 50%);
+                }
+              }
+            }
+          }
+          &:nth-child(odd) {
+            a.img {
+              .linkWrap {
+                //奇數圖片滑過顏色
+                //background-color: rgba(188, 0, 45, 0.9);
+              }
+            }
+          }
+          &:nth-child(even) {
+            //文章區塊背景色
+            //background-color: rgba(244, 244, 244, 1);
+            &:after {
+              //文章區塊背景色－三角形
+              //border-color: transparent transparent transparent rgba(244, 244, 244, 1);
+            }
+            a.img {
+              .linkWrap {
+                //偶數圖片滑過顏色
+                //background-color: rgba(188, 0, 45, 0.9);
+              }
+            }
+            .txtWrap {
+              a.category {
+                //偶數類別文字顏色
+                //color: rgba(0, 0, 0, 1);
+                //偶數類別底線顏色
+                //border-bottom: 1px solid rgba(0, 0, 0, 1);
+              }
+              a.txt {
+                h3 {
+                  //偶數文章標題顏色
+                  //color: rgba(0, 0, 0, 1);
+                }
+              }
+              a.more {
+                span {
+                  //偶數瞭解更多文字顏色
+                  //color: rgba(102, 102, 102, 1);
+                  &:hover {
+                    //偶數瞭解更多文字顏色-滑過
+                    //color: rgba(255, 255, 255, 1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .moreBtn {
+        //是否出現更多文章
+        //display: block;
+        //更多文章文字顏色
+        //color: $black;
+        span {
+          @include screen(pcLarge) {
+            //更多文章滑過背景色
+            //@include linear-gradient(to right, transparent 50%, $black 50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_04 {
+  //模板背景色
+  //background-color: $black;
+  .layoutWrap {
+    .title {
+      //上標題文字顏色
+      //color: $black;
+      &:after {
+        //上標題底線顏色
+        //background-color: $black;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      //color: $black;
+    }
+    .subTitleWrap {
+      .subTitle {
+        //描述文字顏色
+        //color: $white;
+      }
+    }
+    .sliderWrap {
+      .slidesWrap {
+        ul.slides {
+          li {
+            a.img {
+              .linkWrap {
+                //圖片滑過色塊
+                background-color: rgba(255,22,148,0.5);
+              }
+            }
+            .txtWrap {
+              a.txt {
+                h3 {
+                  @include screen(pcLarge) {
+                    //文字滑過色塊
+                    @include linear-gradient(to right, transparent 50%, rgba(255,22,148,0.5));
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_05 {
+  .layoutWrap {
+    ul.article {
+      li {
+        a.img {
+          .linkWrap {
+            //圖片滑過顏色
+            //background-color: rgba(235, 90, 36, 0.9);
+          }
+        }
+        .txtWrap {
+          a.txt {
+            h3 {
+              @include screen(pcLarge) {
+                //文章標題滑過背景色
+                //@include linear-gradient(to right, transparent 50%, $black 50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_06 {
+  //模板背景色
+  //background-color: $black;
+  .layoutWrap {
+    .title {
+      //上標題文字顏色
+      //color: $black;
+      &:after {
+        //上標題底線顏色
+        //background-color: $black;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      //color: $black;
+    }
+    .subTitleWrap {
+      p.subTitle {
+        //描述文字顏色
+        //color: $white;
+      }
+    }
+    ul.article {
+      li {
+        a.img {
+          .linkWrap {
+            //圖片滑過色塊
+            //background-color: rgba(235, 90, 36, 0.9);
+          }
+        }
+        .txtWrap {
+          a.txt {
+            h3 {
+              @include screen(pcLarge) {
+                //文字滑過色塊
+                //@include linear-gradient(to right, transparent 50%, $black 50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.article_02 {
+  .articleWrap {
+    ul.article {
+      li {
+        &:nth-child(odd) {
+          //奇數區塊背景色
+          //background-color: lighten($grey, 10%);
+          a.btn {
+            //奇數區塊按鈕色
+            //background-color: $pink;
+          }
+        }
+        &:nth-child(even) {
+          //偶數區塊背景色
+          //background-color: lighten($grey, 10%);
+          a.btn {
+            //偶數區塊按鈕色
+            //background-color: $pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gallery_01 {
+  //模板背景色
+  // background-color: $black;
+  .layoutWrap {
+    .title {
+      //標題文字顏色
+      //color: $black;
+      &:after {
+        //標題底線顏色
+        //background-color: $black;
+      }
+    }
+    .detail {
+      //描述文字顏色
+      //color: $black;
+    }
+  }
+  .gallery_01_slider {
+    .lSAction {
+      >a {
+        svg {
+          polyline {
+            // 箭頭顏色
+            // stroke: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+    ul.lSGallery {
+      li.active {
+        a {
+          &:after {
+            // 縮圖覆蓋顏色
+            // background-color: rgba(69, 30, 193, 0.4);
+            // 縮圖覆蓋邊框顏色
+            // border: 10px solid rgba(69, 30, 193, 1);
+          }
+        }
+      }
+    }
+  }
+  ul.slider {
+    li {
+      // 隱藏照片描述(調整高度)
+      // height: 240px; //240(img)+66(txt)
+      @include screen(mMedium) {
+        // 隱藏照片描述(調整高度)
+        // height: 281.25px; //281.25(img)+66(txt)
+      }
+      @include screen(mLarge) {
+        // 隱藏照片描述(調整高度)
+        // height: 310.5px; //310.5(img)+66(txt)
+      }
+      @include screen(tb) {
+        // 隱藏照片描述(調整高度)
+        // height: 576px; //576(img)+48(txt)
+      }
+      .img {
+        // 隱藏照片描述(調整高度)
+        // height: 100%; //240(img)+66(txt)
+        @include screen(tb) {
+          // 隱藏照片描述(調整高度)
+          // height: 100%; //576(img)+48(txt)
+        }
+      }
+      .txt {
+        // 隱藏文字描述
+        // display: none;
+        // 描述顏色
+        // color: $white;
+        // 描述背景色
+        // background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+.social_01 {
+  //模板背景色
+  //background-color: darken($grey, 50%);
+  @include screen(pcSmall) {
+    //模板背景色－桌機
+    //background-color: rgba(0,0,0,0.5);
+  }
+  .articleWrap {
+    .txtWrap {
+      @include screen(pcSmall) {
+        //框線顏色
+        //border: 1px solid rgba(250,141,41,1);
+      }
+      .btnWrap {
+        a.btn {
+          //按鈕顏色
+          //background-color: $pink;
+          &:before {
+            //按鈕框線顏色
+            //border: 1px solid rgba(123,156,188,1);
+          }
+          .icon {
+            svg {
+              .st0 {
+                //按鈕facebook svg 顏色
+                //fill: rgba(123,156,188,1);
+              }
+            }
+          }
+          .icontext {
+            //按鈕文字顏色
+            //color: rgba(123,156,188,1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.social_02 {
+  //模板背景色
+  //background-color: $black;
+  .layoutWrap {
+    .title {
+      //上標題文字顏色
+      //color: $black;
+      &:after {
+        //上標題底線顏色
+        //background-color: $black;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      //color: $black;
+    }
+  }
+}
+
+.video_01 {
+  //模版背景
+  //background-image: url('../img/video_bg.jpg');
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-color: rgba(23,23,118,0.7);
+  @include screen(pcLarge) {
+    //桌機模版背景
+    //background-size: 100% auto;
+  }
+  .videoWrap {
+    @include screen(pcLarge) {
+      //桌機模版上下內距
+      //padding: 15% 0 4% 0;
+    }
+  }
+}
+
+.footer_01 {
+  //背景色
+  //background-color: rgba(188,202,210,1);
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+  li .material_btn {
+    //按鈕色
+    //background-color: rgba(98,195,204,1);
+  }
+}

@@ -1,0 +1,37 @@
+// custom global class
+.hide {
+	display: none;
+}
+
+// plugin wow = scroll to animation
+// plugin showOnScroll = scroll to infinite animation
+.showOnScroll {
+	opacity: 0;
+	&.animated {
+		opacity: 1;
+	}
+}
+// animation fade in and up
+.custom_fadeinup {
+  	@include animation(custom_fadeinup 1s cubic-bezier(0.165, 0.84, 0.44, 1));
+}
+.custom_fadeindown {
+	@include animation(custom_fadeindown 1s cubic-bezier(0.165, 0.84, 0.44, 1));
+}
+.custom_fadeinright {
+	@include animation(custom_fadeinleft 1s cubic-bezier(0.165, 0.84, 0.44, 1));	
+	@include screen(pcSmall) {
+		@include animation(custom_fadeinright 1s cubic-bezier(0.165, 0.84, 0.44, 1));
+	}
+}
+.custom_fadeinleft {
+	@include animation(custom_fadeinleft 1s cubic-bezier(0.165, 0.84, 0.44, 1));
+}
+// animation tilt in and up
+.custom_tiltinup {
+  	@include animation(custom_tiltinup 1s ease);
+}
+// animation come in right to left
+.custom_R2Lflow {
+  	@include animation(custom_R2Lflow 1s ease);
+}
