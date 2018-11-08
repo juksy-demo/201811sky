@@ -80,21 +80,21 @@
             }
         }
         .filterblue {
-            background-image: url("../../img/header/h_03/m/blue_filter.png");
+            background-image: url("../img/header/h_03/m/blue_filter.png");
             background-repeat: no-repeat;
             background-position: 0 0;
             background-size: contain;
             @include screen(pcSmall) {
-                background-image: url("../../img/header/h_03/pc/blue_filter.png");
+                background-image: url("../img/header/h_03/pc/blue_filter.png");
             }
         }
         .filterred {
-            background-image: url("../../img/header/h_03/m/red_filter.png");
+            background-image: url("../img/header/h_03/m/red_filter.png");
             background-repeat: no-repeat;
             background-position: 0 0;
             background-size: contain;
             @include screen(pcSmall) {
-                background-image: url("../../img/header/h_03/pc/blue_filter.png");
+                background-image: url("../img/header/h_03/pc/blue_filter.png");
             }
         }
         .anime-blue, .anime-red {

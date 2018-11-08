@@ -756,21 +756,21 @@ a.nav_02_btn {
       .header_03 .main-inner .filterblue, .header_03 .main-inner .filterred {
         padding-bottom: 47.25%; } }
   .header_03 .main-inner .filterblue {
-    background-image: url("../../img/header/h_03/m/blue_filter.png");
+    background-image: url("../img/header/h_03/m/blue_filter.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain; }
     @media screen and (min-width: 1024px) {
       .header_03 .main-inner .filterblue {
-        background-image: url("../../img/header/h_03/pc/blue_filter.png"); } }
+        background-image: url("../img/header/h_03/pc/blue_filter.png"); } }
   .header_03 .main-inner .filterred {
-    background-image: url("../../img/header/h_03/m/red_filter.png");
+    background-image: url("../img/header/h_03/m/red_filter.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain; }
     @media screen and (min-width: 1024px) {
       .header_03 .main-inner .filterred {
-        background-image: url("../../img/header/h_03/pc/blue_filter.png"); } }
+        background-image: url("../img/header/h_03/pc/blue_filter.png"); } }
   .header_03 .main-inner .anime-blue, .header_03 .main-inner .anime-red {
     animation-delay: 1s;
     animation-duration: 6s;
